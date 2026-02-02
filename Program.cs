@@ -50,10 +50,41 @@ public class Program
             .OrderBy(x => x.Name)
             .ToList();
 
+
+        var filteredCity = dbContext.city
+            .OrderBy(x => x.Name)
+            .ToList();
+
+
+        var citiesWithStated = from city in dbContext.city
+                               join state in dbContext.state
+                               on city.StateId equals state.Id
+                               orderby state.Name
+                               select new
+                               {
+                                   cityName = city.Name,
+                                   stateName = state.Name,
+                                   stateCode = state.Code
+                               };
+
+        foreach (var item in citiesWithStated)
+        {
+            Console.WriteLine($"{item.cityName} : {item.stateName} : {item.stateCode}");
+        }
+
+
+
+       /* foreach(var ct in filteredCity)
+        {
+            Console.WriteLine($"{ct.Id} : {ct.Name} : {ct.StateId}");
+        }
+
+        Console.WriteLine();
+
         foreach (var st in filteredStates)
         {
             Console.WriteLine($"{st.Id} : {st.Name} : {st.Code}");
-        }
+        }*/
 
 
         /*foreach (var state in filteredStates)

@@ -153,3 +153,4 @@ C:\Users\Welcome\source\repos\TestConsole\TestConsole\obj\Debug\net10.0\refint\T
 C:\Users\Welcome\source\repos\TestConsole\TestConsole\obj\Debug\net10.0\TestConsole.pdb
 C:\Users\Welcome\source\repos\TestConsole\TestConsole\obj\Debug\net10.0\TestConsole.genruntimeconfig.cache
 C:\Users\Welcome\source\repos\TestConsole\TestConsole\obj\Debug\net10.0\ref\TestConsole.dll
+C:\Users\Welcome\source\repos\TestConsole\TestConsole\obj\Debug\net10.0\TestConsole.sourcelink.json
